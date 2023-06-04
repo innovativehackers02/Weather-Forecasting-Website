@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="h-full" lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sky watch</title>
+  <link rel="icon" type="images/x-icon" href="images/favicon.ico" >
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/brands.css">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="css/regular.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/solid.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.green.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/css">
+
+body {
+  -webkit-transition: background-color 800ms ease;
+  transition: background-color 800ms ease;
+}
+body.dark {
+  background-color: rgb(223, 117, 149);
+  color: #fff;
+}
+body.dark .ham{
+  background-color: #1e293b;
+[17:23, 03/06/2023] Ananya Arya: body.dark .ham{
+  background-color: #1e293b;
+}
+body.dark table tr td{
+  color: white !important;
+}
+body.dark table tr td:hover{
+  color: black !important;
+}
+body.dark .foot  p{
+  color: white !important;
+}
+body.dark .foot  li{
+  color: white !important;
+}
+</style>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: rgb(223, 117, 149);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    main {
+      margin: 20px;
+    }
+    
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .review {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .rating {
+      font-weight: bold;
+    }
+    
+    .comment {
+      margin-top: 5px;
+    }
+  </style>
+
+</head>
+<body class="m-0 p-0 h-full scroll-smooth box-border ">
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="company-name">
+          <B><h1>SKY WATCH</h1></B>
+        </div>
+    </header>
+  
+
+<!-- RESPONSIVE NAVIGATION BAR STARTS-->
+<nav class="bg-blue-700 px-4  py-3 fixed z-20 w-full">
+<div class="flex justify-between lg:justify-around">
+
+<div class="flex items-center space-x- lg:space-x-10 justify-center "> 
+     <i onclick="icons()" class="fa-solid fa-bars text-white text-xl lg:hidden cursor-pointer hover:bg-blue-800 p-3 px-3.5 rounded-full " id="icon"  ></i>
+      
+      <div class="hidden lg:block">
+        <ul class="flex space-x-12 text-white font-bold">
+          <li class="hover:text-blue-300"><a href="home.html">Home</a></li> 
+          <li class="hover:text-blue-300"><a href="http://127.0.0.1:5000">Predict Weather</a></li>
+          
+          
+          <li class="hover:text-blue-300"><a href="about us.html">About Us</a></li>
+          <li class="hover:text-blue-300"><a href="blogs.html">blogs</a></li>
+          <li class="hover:text-blue-300"><a href="sign.html">Sign in</a></li>
+          <li class="hover:text-blue-300"><a href="review.html">Review</a></li>
+        </ul>
+      </div>
+</div>
+
+
+  </nav>
+<!-- RESPONSIVE NAVBAR ENDS -->
+<header>
+    <h1>Review Page</h1>
+  </header>
+  
+  <main>
+    <h2>Leave a Review</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Select Rating</option>
+          <option value="1">1 Star</option>
+          <option value="2">2 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="5">5 Stars</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+    
+    <h2>Recent Reviews</h2>
+    <div class="review">
+      <h3>Anvi Kapoor</h3>
+      <p class="rating">Rating: 4 Stars</p>
+      <p class="comment">I recently had the opportunity to explore SKY WATCH , a comprehensive website that provides weather information for various cities and countries. Overall, my experience with the website was positive, and I found it to be a reliable and user-friendly platform for accessing accurate weather forecasts.
+
+First and foremost, the website's interface is clean, intuitive, and easy to navigate. The website's design is visually appealing, with a combination of crisp graphics and neatly organized data that makes it effortless to locate the information you're seeking.
+
+One of the standout features of SKY WATCH is the extensive range of locations covered. The site boasts a vast database of cities and countries, ensuring that users can access weather forecasts for virtually any location around the globe. 
+
+The accuracy of the weather information provided by SKY WATCH was impressive. The forecasts were up-to-date and aligned with the conditions I observed firsthand. The website leverages reliable weather data sources, ensuring that users can trust the information they receive. 
+
+Furthermore, the website offers a range of additional features that enhance the overall user experience. These include extended forecasts, historical weather data, radar maps, and satellite imagery. Such features provide valuable insights for users who require a deeper understanding of weather patterns or who are planning ahead for events or trips.
+
+
+
+In summary, SKY WATCH is a commendable website that provides comprehensive and accurate weather information for cities and countries worldwide. Its user-friendly interface, extensive database, and reliable forecasts make it an excellent resource for anyone in need of weather updates. With a few enhancements to its alert system, SKY WATCH has the potential to become an even more indispensable tool for users seeking up-to-date and reliable weather information</p>
+    </div>
+
+  </main>
+  <!-- SLIDER ENDS -->
+  <footer>
+    <div class="contact-info">
+      <h4>Contact Us</h4>
+      <p>Email: hackersinnovative@gmail.com</p>
+      <p>Phone: +9982567986</p>
+    </div>
+    </div>
+  
+  </footer>
